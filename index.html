@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="index.css">
+	</head>
+	<body onload="initialize()">
+
+		<h1 id='title'>Model Nagela Schreckenberga</h1>
+		<canvas id="board" width="1000px" height="300px">
+		Your browser does not support the canvas element.
+		</canvas>
+		<div class="controls">
+			<div class='half'>
+					Szansa na spowolnienie</br>
+					Predkosc maksymalna</br>
+			</div>
+			<div class='nrs'>
+				<input type="number" value=0.5 min=0 max=1 id="slowp">
+				<input type="number" value=5 id="maxSpeed">
+			</div>
+			<div class='carNr'>
+				Liczba samochodow na konkretnym pasie
+				<div class='carNrInputs'>
+					<input type="number" value=3 max=30 id="nr1">
+					<input type="number" value=6 max=30 id="nr2">
+					<input type="number" value=9 max=30 id="nr3">
+					<input type="number" value=15 max=30 id="nr4">
+					<input type="number" value=18 max=30 id="nr5">
+					<input type="number" value=21 max=30 id="nr6">
+				</div>
+			</div>
+			<button id='apply' onclick="applyInputs()"> Zastosuj zmiany</button>
+			<div class='buttons'>
+				<button onclick="start()">start</button>
+				<button onclick="stop()">stop</button>
+				<button onclick="step()">step</button>
+			</div>
+		</div>
+		<div id="chartContainer" style="height: 330px; width: 600px;"></div>
+
+
+		<script src="script/controller.js"></script>
+		<script src="script/Draw.js"></script>
+		<script src="script/Base.js" ></script>
+		<script src="script/Car.js" ></script>
+		<script src="script/canvasjs/canvasjs.min.js" type="text/javascript"></script>
+		
+	</body>
+</html>

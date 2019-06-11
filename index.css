@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'Comfortaa';
+    src:  url('../fonts/comfortaa-base.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Comfortaa';
+    src: url('../fonts/comfortaa-ext.woff2') format('woff2');
+}
+html {
+    height: 100%;
+}
+body {
+	height: 100%;
+	margin: 0;
+    padding: 0;
+	background: linear-gradient(0deg, rgba(70,130,180,1) 0%, rgba(176,196,222,1) 100%);
+    color: black;
+    font-family: 'Comfortaa';
+}
+#title{
+    width: 1000px;
+    text-align: center;
+}
+#board{
+    display: block;
+}
+.controls{
+    width: 400px;
+    height: 330px;
+    float: left;
+    background-color: lightgrey;
+    padding: 25px 10px;
+    box-sizing: border-box;
+}
+.half{
+    width: 70%;
+    float: left;
+    font-size: 19px;
+}
+.nrs{
+    width: 30%;
+    float: left;
+}
+.nrs input{
+    width: 90%;
+    text-align: center;
+}
+.carNr{
+    float: left;
+    margin: 15px 0;
+    width: 100%;
+    text-align: center;
+}
+.carNrInputs input{
+    width: 14%;
+    text-align: center;
+}
+#apply{
+    width: 100%;
+    float: left;
+    height: 30px;
+}
+.buttons{
+    float: left;
+    width: 100%;
+    margin: 15px 0;
+}
+.buttons button{
+    width: 32%;
+    height: 50px;
+    box-sizing: border-box;
+}
